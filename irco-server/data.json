@@ -1,0 +1,290 @@
+[
+  {
+    "model": "ircoapp.site",
+    "pk": 1,
+    "fields": {
+      "name": "Earl Boyles Elementary",
+      "location": "10822 SE Bush Street, Portland, OR 97266",
+      "lat": 45.49442,
+      "lon": -122.55195,
+      "locphone": "(503) 256-6554",
+      "manager": "Rey Drew",
+      "mgrphone1": "(503)-528-4059",
+      "mgremail": "reymondd@irco.org",
+      "principal": "Ericka Guynes",
+      "prncphone": "(503) 256-6554",
+      "prncemail": "ericka_guynes@ddsd40.org"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 2,
+    "fields": {
+      "name": "George Middle School",
+      "location": "10000 N Burr Street, Portland, OR 97203",
+      "lat": 45.59608,
+      "lon": -122.73669,
+      "locphone": "(503) 916-6262",
+      "manager": "TBD",
+      "mgrphone1": "(503) 916-5718",
+      "principal": "Lavert Robertson",
+      "prncphone": "(503) 916-6262",
+      "prncemail": "lrobert1@pps.net"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 3,
+    "fields": {
+      "name": "Gilbert Heights Elementary",
+      "location": "12839 SE Holgate Boulevard, Portland, OR 97236",
+      "lat": 45.49042,
+      "lon": -122.53177,
+      "locphone": "(503) 256-6502",
+      "manager": "Mark Quemada",
+      "mgrphone1": "(971) 386-3988",
+      "mgremail": "markq@irco.org",
+      "principal": "Shane Basset",
+      "prncphone": "(503) 256-6502",
+      "prncemail": "shane_bassett@ddsd40.org"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 4,
+    "fields": {
+      "name": "Gilbert Park Elementary",
+      "location": "13132 SE Ramona Street, Portland, OR 97236",
+      "lat": 45.47866,
+      "lon": -122.52731,
+      "locphone": "(503) 256-6531",
+      "manager": "Mandy Hurley",
+      "mgrphone1": "(503) 256-6531",
+      "mgremail": "mandyh@irco.org",
+      "principal": "Stacie Moncrief",
+      "prncphone": "(503) 256-6531",
+      "prncemail": "stacie_moncrief@ddsd40.org"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 5,
+    "fields": {
+      "name": "Harrison Park K-8",
+      "location": "2225 SE 87th Avenue, Portland, OR 97216",
+      "lat": 45.50694,
+      "lon": -122.57481,
+      "locphone": "(503) 916-5700",
+      "manager": "Andrew Baron",
+      "mgrphone1": "(503) 442-9962",
+      "mgremail": "andrewb@irco.org",
+      "principal": "Leah Dickey",
+      "prncphone": "(503) 916-5700",
+      "prncemail": "ldickey@pps.net"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 6,
+    "fields": {
+      "name": "Jason Lee Elementary",
+      "location": "2222 NE 92nd Avenue, Portland, OR 97220",
+      "lat": 45.53818,
+      "lon": -122.56765,
+      "locphone": "(503) 916-6144",
+      "manager": "Maryam Lowe",
+      "mgrphone1": "(503) 916-6144 extension 70039",
+      "mgremail": "maryaml@irco.org",
+      "principal": "Isaac Cardona",
+      "prncphone": "(503) 916-6144",
+      "prncemail": "icardona@pps.net"
+    }
+  },
+  {
+    "model": "ircoapp.site",
+    "pk": 7,
+    "fields": {
+      "name": "Lents K-8",
+      "location": "5105 SE 97th Avenue, Portland, OR 97266",
+      "lat": 45.4853,
+      "lon": -122.56409,
+      "locphone": "(503) 916-6322",
+      "manager": "Carmen Flores",
+      "mgrphone1": "(503) 577-2273",
+      "mgremail": "Cflores1@pps.net",
+      "principal": "Richard Smith",
+      "prncphone": "(503) 916-6322",
+      "prncemail": "Rsmith5@pps.net"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 1,
+    "fields": {
+      "site": 7,
+      "name": "Pantry",
+      "description": "Lents Families Only",
+      "schedule": "Mondays 3:30p-5:15p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 2,
+    "fields": {
+      "site": 7,
+      "name": "Ms. Ellis' Arts & Crafts",
+      "description": "K - 2nd Grade",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 3,
+    "fields": {
+      "site": 7,
+      "name": "Garden Chefs",
+      "description": "1st - 2nd Grade",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 4,
+    "fields": {
+      "site": 7,
+      "name": "Ms. Ch's Homework Support",
+      "description": "3rd - 5th Grades",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 5,
+    "fields": {
+      "site": 7,
+      "name": "Wearable LED Saturday Academy",
+      "description": "3rd - 5th Grades",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 6,
+    "fields": {
+      "site": 7,
+      "name": "Mr. Hewitt's Activity Coaches",
+      "description": "3rd - 5th Grades",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 7,
+    "fields": {
+      "site": 7,
+      "name": "Ethos Ukulele",
+      "description": "4th - 5th Grades",
+      "schedule": "Mondays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 8,
+    "fields": {
+      "site": 7,
+      "name": "Ms. Ellis' Chess Class - Chess for Success",
+      "description": "K - 5th Grades",
+      "schedule": "Tuesdays"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 9,
+    "fields": {
+      "site": 2,
+      "name": "Bravo",
+      "schedule": "Mondays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 10,
+    "fields": {
+      "site": 2,
+      "name": "Campfire - 6th Grade",
+      "schedule": "Mondays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 11,
+    "fields": {
+      "site": 2,
+      "name": "Campfire - 7th Grade",
+      "schedule": "Mondays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 12,
+    "fields": {
+      "site": 2,
+      "name": "Campfire - 8th Grade",
+      "schedule": "Mondays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 13,
+    "fields": {
+      "site": 2,
+      "name": "Homework Club",
+      "schedule": "Mondays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 14,
+    "fields": {
+      "site": 2,
+      "name": "African Drumming",
+      "schedule": "Mondays 5:15p-6:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 15,
+    "fields": {
+      "site": 2,
+      "name": "Brotherhood",
+      "schedule": "Mondays 5:15p-6:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 16,
+    "fields": {
+      "site": 2,
+      "name": "Create Hip Hop Music",
+      "schedule": "Tuesdays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 17,
+    "fields": {
+      "site": 2,
+      "name": "MBA Basketball",
+      "schedule": "Tuesdays 4:15p-5:05p"
+    }
+  },
+  {
+    "model": "ircoapp.program",
+    "pk": 18,
+    "fields": {
+      "site": 2,
+      "name": "Kitchen Chemistry",
+      "schedule": "Tuesdays 5:15p-6:05p"
+    }
+  }
+]
