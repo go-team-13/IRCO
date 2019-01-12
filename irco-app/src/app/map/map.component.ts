@@ -7,7 +7,6 @@ import {MouseEvent} from '@agm/core';
   styleUrls: [ './map.component.scss' ]
 })
 export class MapComponent {
-  // google maps zoom level
   zoom: number = 8;
 
   // initial center position for the map
