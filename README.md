@@ -6,9 +6,11 @@
 
 Create a python virtualenv, activate it and install django inside it:
 
-`virtualenv irco`
-`source irco/bin/activate`
-`pip install django`
+```
+virtualenv irco
+source irco/bin/activate
+pip install django
+```
 
 Clone this repo, navigate to `irco-server` and initialize the django database:
 
