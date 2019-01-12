@@ -14,39 +14,42 @@
 
   <mat-sidenav-content>
     <mat-card>
-      <mat-card-title>Location</mat-card-title>
-      <mat-card-subtitle>HOURS | ADDRESS | CONTACT</mat-card-subtitle>
-      <mat-card-content>GOOGLE API MAP LOCATION</mat-card-content>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Locaction Details
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ul>
-          <li>detail 1</li>
-          <li>detail 2</li>
-          <li>detail 3</li>
-        </ul>
-      </mat-expansion-panel>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Location Services
-          </mat-panel-title>
-          <mat-panel-description>
-
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <ul>
-          <li>service 1</li>
-          <li>service 2</li>
-          <li>service 3</li>
-        </ul>
-      </mat-expansion-panel>
-    </mat-card>
-
+      <mat-card-title>Africa House</mat-card-title>
+      <mat-card-subtitle>(503) 802-0082 | Djimet Dogo | <a href="ailto:mailto:DjimetD@irco.org">djimetd@irco.org</a></mat-card-subtitle>
+      <mat-card-subtitle>631 NE 102nd Ave, Portland, OR 97220</mat-card-subtitle>
+      <mat-card-content>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Location Details
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ul>
+            <li>5000 + community members</li>
+            <li>22 ethnicities and cultures</li>
+            <li>10 languages</li>
+          </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Location Services
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ul>
+            <li>After School Programs</li>
+            <li>Food Pantry</li>
+            <li>Legal Services</li>
+            <li>Senior & Disability Services</li>
+            <li>Employment & Training</li>
+            <li>Language Bank</li>
+          </ul>
+        </mat-expansion-panel>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Event Schedule</button>
+        </mat-card-actions>
+      </mat-card-content>
+      </mat-card>
     <map></map>
   </mat-sidenav-content>
 </mat-sidenav-container>
