@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {MouseEvent} from '@agm/core';
 
 @Component({
   selector: 'map',
@@ -15,10 +14,6 @@ export class MapComponent {
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
-  }
-
-  markerDragEnd(m: marker, $event: MouseEvent) {
-    console.log('dragEnd', m, $event);
   }
 
   markers: marker[] = [
