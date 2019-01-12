@@ -4,6 +4,41 @@
     Welcome to {{ title }}!!!
   </h1>
 </div>
+
+<mat-card>
+  <mat-card-title>Location</mat-card-title>
+  <mat-card-subtitle>HOURS | ADDRESS | CONTACT</mat-card-subtitle>
+  <mat-card-content>GOOGLE API MAP LOCATION</mat-card-content>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Locaction Details
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+      <li>detail 1</li>
+      <li>detail 2</li>
+      <li>detail 3</li>
+    </ul>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Location Services
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul>
+      <li>service 1</li>
+      <li>service 2</li>
+      <li>service 3</li>
+    </ul>
+  </mat-expansion-panel>
+</mat-card>
+
 <map></map>
 
 <router-outlet></router-outlet>
