@@ -7,4 +7,12 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'irco-app';
+
+  locations: string[] = [
+    'Africa House',
+    'Earl Boyes Elementary',
+    'George Middle School',
+    'Gilbert Heights Elementary',
+    'Gilbert Park Elementary'
+  ];
 }

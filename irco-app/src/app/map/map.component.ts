@@ -6,17 +6,29 @@ import {Component} from '@angular/core';
   styleUrls: [ './map.component.scss' ]
 })
 export class MapComponent {
-  zoom: number = 14;
+  zoom: number = 15;
 
   // initial center position for the map
-  lat: number = 45.53946;
-  lng: number = -122.60364;
+  lat: number = 45.52732;
+  lng: number = -122.55195;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
   }
 
+  locations: string[] = [
+    'Africa House',
+    'Earl Boyes Elementary',
+    'George Middle School'
+  ]
+
   markers: marker[] = [
+    {
+      lat: 45.52732,
+      lng: -122.55195,
+      label: 'Africa House',
+      draggable: true
+    },
     {
       lat: 45.49442,
       lng: -122.55195,

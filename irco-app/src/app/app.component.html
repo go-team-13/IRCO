@@ -1,47 +1,57 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!!!
-  </h1>
-</div>
-<mat-card>
-  <mat-card-title>Africa House</mat-card-title>
-  <mat-card-subtitle>(503) 802-0082 | Djimet Dogo | <a href="ailto:mailto:DjimetD@irco.org">djimetd@irco.org</a></mat-card-subtitle>
-  <mat-card-subtitle>631 NE 102nd Ave, Portland, OR 97220</mat-card-subtitle>
-  <mat-card-content>
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Location Details
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <ul>
-      <li>5000 + community members</li>
-      <li>22 ethnicities and cultures</li>
-      <li>10 languages</li>
-    </ul>
-  </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="true">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Location Services
-        </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ul>
-          <li>After School Programs</li>
-          <li>Food Pantry</li>
-          <li>Legal Services</li>
-          <li>Senior & Disability Services</li>
-          <li>Employment & Training</li>
-          <li>Language Bank</li>
-        </ul>
-    </mat-expansion-panel>
-    <mat-card-actions>
-      <button mat-raised-button color="primary">Event Schedule</button>
-    </mat-card-actions>
-  </mat-card-content>
-</mat-card>
+<mat-toolbar>
+  <button mat-icon-button (click)="snav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img class = 'icon' src='../assets/irco-littleguy-logo-black-transparent.png'>
+</mat-toolbar>
 
-<map></map>
+<mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav #snav [mode]="'side'">
+    <mat-nav-list>
+      <a mat-list-item routerLink="." *ngFor="let location of locations">{{location}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
 
-<router-outlet></router-outlet>
+  <mat-sidenav-content>
+    <mat-card>
+      <mat-card-title>Africa House</mat-card-title>
+      <mat-card-subtitle>(503) 802-0082 | Djimet Dogo | <a href="ailto:mailto:DjimetD@irco.org">djimetd@irco.org</a></mat-card-subtitle>
+      <mat-card-subtitle>631 NE 102nd Ave, Portland, OR 97220</mat-card-subtitle>
+      <mat-card-content>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Location Details
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ul>
+            <li>5000 + community members</li>
+            <li>22 ethnicities and cultures</li>
+            <li>10 languages</li>
+          </ul>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Location Services
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ul>
+            <li>After School Programs</li>
+            <li>Food Pantry</li>
+            <li>Legal Services</li>
+            <li>Senior & Disability Services</li>
+            <li>Employment & Training</li>
+            <li>Language Bank</li>
+          </ul>
+        </mat-expansion-panel>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Event Schedule</button>
+        </mat-card-actions>
+      </mat-card-content>
+      </mat-card>
+    <map></map>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
