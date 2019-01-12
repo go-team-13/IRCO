@@ -6,11 +6,11 @@ import {Component} from '@angular/core';
   styleUrls: [ './map.component.scss' ]
 })
 export class MapComponent {
-  zoom: number = 12;
+  zoom: number = 14;
 
   // initial center position for the map
-  lat: number = 45.49442;
-  lng: number = -122.55195;
+  lat: number = 45.53946;
+  lng: number = -122.60364;
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
@@ -140,7 +140,6 @@ export class MapComponent {
   ]
 }
 
-// just an interface for type safety.
 interface marker {
   lat: number;
   lng: number;
