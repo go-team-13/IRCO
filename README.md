@@ -1,6 +1,6 @@
 # go-team-13
 
-## Running the app
+## Running the app locally
 ### Prerequisites
 Before running the app, make sure that you have `npm` and `Node.js` version 8.x or 10.x installed.
 
