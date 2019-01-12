@@ -9,7 +9,7 @@
   <mat-card-title>Location</mat-card-title>
   <mat-card-subtitle>HOURS | ADDRESS | CONTACT</mat-card-subtitle>
   <mat-card-content>GOOGLE API MAP LOCATION</mat-card-content>
-  <mat-expansion-panel>
+  <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Locaction Details
@@ -21,8 +21,7 @@
       <li>detail 3</li>
     </ul>
   </mat-expansion-panel>
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Location Services
